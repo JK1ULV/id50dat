@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "id50dat"
+version = "0.1.0"
+description = "Codec for ICOM ID-50 image .dat files, including transmit data and TX/RX history"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+authors = [{ name = "JK1ULV" }]
+keywords = ["icom", "id-50", "d-star", "amateur-radio", "jpeg"]
+dependencies = ["Pillow==12.3.0"]
+
+[project.urls]
+Repository = "https://github.com/JK1ULV/id50dat"
+
+[project.scripts]
+id50dat = "id50dat.cli:main"
+
+[tool.setuptools]
+packages = ["id50dat"]
